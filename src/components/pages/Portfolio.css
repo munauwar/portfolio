@@ -1,0 +1,133 @@
+.split {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+}
+
+.header-portfolio {
+    font-size: 25px;
+    color: white;
+}
+
+.left {
+    left: 0;
+}
+  
+.right {
+    right: 0;
+}
+
+.languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 33%;
+    max-width: 40%;
+    padding: 0 4px 0 4px;
+}
+
+.content {
+    left: 15%;
+    position: absolute;
+    top: 30%;
+    font-size: 15px;
+    color: rgb(140, 138, 132);
+}
+
+.content::selection {
+    color: #08fdd8;
+} 
+
+.quote::selection {
+    color: red;
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-angular,
+.fa-js,
+.fa-bootstrap,
+.fa-react,
+.fa-node-js,
+.fa-java {
+    margin: 0 0 0 10px;
+}
+
+.fa-html5,
+.fa-angular,
+.fa-java {
+    color: red;
+}
+
+.fa-js {
+    color: yellow;
+}
+
+.fa-bootstrap {
+    color: purple;
+}
+
+.fa-css3-alt,
+.fa-react {
+    color: blue;
+}
+
+.fa-node-js {
+    color: green;
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        flex-direction: column;  
+    }
+
+    .left {
+        height: 50%;
+        width: 95%;
+        position: relative;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .right {
+        height: 50%;
+        width: 75%;
+        position: relative;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .content {
+        left: 0;
+    }
+
+    .column {
+        flex: 33%;
+        max-width: 45%;
+        padding: 0 4px;
+    }
+
+    .timeline-holder {
+        height: 85%;
+        margin: 0 20px 0 0;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .content {
+        top: 15%;
+    }
+}

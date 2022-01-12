@@ -1,0 +1,113 @@
+.main-footer {
+    margin-top: auto;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+.projects-column {
+    margin-right: 40px;
+}
+
+.menu-column {
+    margin-right: 50px;
+}
+
+.footer-header {
+    color: #08fdd8;
+}
+
+.projects {
+    text-decoration: none;
+    color: white;
+    line-height: 2; 
+    cursor: pointer;
+}
+
+.projects:hover {
+    border-bottom: 2px solid red;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.footer-name {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-name::selection {
+    color: #08fdd8;
+}
+
+.nav {
+    text-decoration: none;
+    color: white;
+    line-height: 2;
+    cursor: pointer;
+}
+
+.nav:hover {
+    border-bottom: 2px solid red;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.copyright::selection {
+    color: #08fdd8;
+}
+
+.icons {
+    margin-top: 10px;   
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.fa-linkedin-in:hover {
+    color: #0e76a8;
+    transform: translateY(-4px);
+    transition: 0.3s;
+}
+
+.fa-github {
+    margin-left: 20px;
+}
+
+.fa-github:hover {
+    color: orangered;
+    transform: translateY(-4px);
+    transition: 0.3s;
+}
+
+.fa-envelope {
+    margin-left: 20px;
+}
+
+.fa-envelope:hover {
+    color: white;
+    transform: translateY(-4px);
+    transition: 1s;
+}

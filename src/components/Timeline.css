@@ -1,0 +1,23 @@
+.timeline-holder {
+    height: 75%;
+    top: 10%;
+    position: absolute;
+}
+
+.timeline-holder * {
+    scrollbar-width: none !important;
+}
+
+#timeline-main-wrapper::-webkit-scrollbar {
+    width: 0;
+}
+
+.timeline-item-title.css-1dus2rt.ergoa4r0 {
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .css-mpnodf-TimelineTitleWrapper.eecm4uk0 {
+        width: 40%;
+    }
+} 
