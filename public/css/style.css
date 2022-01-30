@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    background-color: rgb(33, 30, 30);
+}
+
+/* Start sidebar styling */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    float: left;
+    height: 100vh;
+    background-color: #181818;
+    color: white;
+    overflow: auto;
+    position: fixed;
+}
+
+.name-header {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-top: 20px;
+}
+
+.social-media {
+    font-size: 35px;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 30px;
+}
+
+.sidebar.nav-item {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#nav {
+    margin-top: 150px;
+}
+
+/* End sidebar styling */
+
+/* Start home styling */
+.intro-text {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    top: 20%;
+    position: absolute;
+    left: 12%;
+    animation: fadein 9s;
+    -moz-animation: fadein 9s; /* Firefox */
+    -webkit-animation: fadein 9s; /* Safari and Chrome */
+    -o-animation: fadein 9s; /* Opera */
+}
+
+.user-name {
+    color: #08fdd8;
+}
+
+.user-name::selection {
+    color: red;
+}
+
+.intro-text::selection {
+    color: #08fdd8;
+}
+
+.sub-text-home::selection {
+    color: #08fdd8;
+}
+
+.sub-text-home {
+    color: rgb(140, 138, 132);
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.btn.btn.btn-secondary {
+    background-color:  #181818;
+    color: #08fdd8;
+    font-size: 17px;
+    letter-spacing: 4px;
+    font-family: "Open Sans",sans-serif;
+    text-decoration: none;
+    border: 1px solid #08fdd8;
+    margin-top: 10px;
+    height: 42px;
+}
+
+.btn.btn-secondary:hover {
+    background-color: #08fdd8 !important;
+    color: #181818;
+}
+
+/* End home styling */
+
+/* Start about styling */
+.header {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.sub-text {
+    color: rgb(140, 138, 132);
+    font-size: 16px;
+    width: 50%;
+    letter-spacing: 3px;
+}
+
+.sub-text::selection {
+    color: #08fdd8;
+}
+
+/* End about styling */
+
+/* Start skills styling */
+.image-project {
+    position: absolute;
+    top: 19%;
+    left: 60%;
+    height: 60%;
+}
+
+.image-project-detail {
+    position: absolute;
+    top: 19%;
+    left: 75%;
+    height: 60%;
+}
+/* End skills styling */
+
+/* Start contact styling */
+input {
+    color: white;
+}
+/* End contact styling */
+@media screen and (max-width: 768px) {
+    .intro-text {
+        top: 50%;
+        left: 50%;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        width: 85%;
+    }
+
+    .sub-text {
+        width: 90%;
+    } 
+
+    #nav {
+        margin-top: 0px;
+    }
+
+    .navbar-nav .nav-link {
+        margin-top: 0px;
+    }
+} 

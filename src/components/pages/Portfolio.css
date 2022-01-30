@@ -1,3 +1,7 @@
+#portfolio {
+    background-color: black;
+}
+
 .split {
     height: 100%;
     width: 50%;
@@ -35,7 +39,7 @@
 .content {
     left: 15%;
     position: absolute;
-    top: 30%;
+    top: 40%;
     font-size: 15px;
     color: rgb(140, 138, 132);
 }
@@ -56,7 +60,7 @@
 .fa-react,
 .fa-node-js,
 .fa-java {
-    margin: 0 0 0 10px;
+    margin: 0 0 0 5px;
 }
 
 .fa-html5,
@@ -110,7 +114,8 @@
     }
 
     .content {
-        left: 0;
+        left: 5%;
+        right: 5%;
     }
 
     .column {

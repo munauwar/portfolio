@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-import Footer from '../Footer';
 import emailjs from 'emailjs-com';
 import { useForm } from "react-hook-form";
 import 'react-toastify/dist/ReactToastify.min.css';
@@ -58,7 +57,7 @@ const Contact = ()  => {
 
     return (
         <>
-        <div className="container">
+        <div id="contact" className="container">
             <div className="split left">
                 <div className="content-form">
                     <h2 className="header-contact">Contact.</h2>
@@ -130,7 +129,6 @@ const Contact = ()  => {
             </div>
 
         </div>
-        <Footer />
         </>
     )
 }

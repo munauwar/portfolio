@@ -1,6 +1,5 @@
 import React from 'react'
 import '../../App.css'
-import Footer from '../Footer';
 import Timeline from '../Timeline';
 import './About.css'
 
@@ -8,7 +7,7 @@ import './About.css'
 function About() {
     return (
         <>
-        <div className="container">
+        <div id="about" className="container">
             <div className="split left">
                 <div className="content">
                     <h2 className="header-portfolio">About me.</h2>
@@ -26,7 +25,6 @@ function About() {
                 <Timeline />
             </div>
         </div>
-        <Footer />
         </>
     )
 }

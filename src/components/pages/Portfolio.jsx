@@ -1,12 +1,10 @@
 import React from 'react'
 import '../../App.css'
 import './Portfolio.css'
-import Footer from '../Footer'
 
 function Portfolio() {
     return (
-        <>
-        <div className="container">
+        <div id="portfolio" className="container">
             <div className="split left">
                 <div className="content portfolio">
                     <h2 className="header-portfolio">Skills & Experience.</h2>
@@ -41,8 +39,6 @@ function Portfolio() {
                 </div>
             </div>
         </div>
-        <Footer/>
-        </>
     )
 }
 
