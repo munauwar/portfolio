@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 import './Footer.css'
 
 function Footer() {
@@ -17,25 +17,52 @@ function Footer() {
                 <div className="menu-column">
                     <h4 className="footer-header">Menu</h4>
                     <ul className="list-unstyled">
-                    <li>
-                        <Link to="/" className="nav">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/about" className="nav">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/portfolio" className="nav">Portfolio</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact" className="nav">Contact</Link>
-                    </li>
+                        <li>
+                            <HashLink
+                                smooth
+                                to="#home"
+                                className="list-items" >
+                                Home
+                            </HashLink>
+                        </li>
+                        <li>
+                            <HashLink
+                                smooth
+                                to="#about"
+                                className="list-items" >
+                                About
+                            </HashLink>
+                        </li>
+                        <li>
+                            <HashLink
+                                smooth
+                                to="#portfolio"
+                                className="list-items" >
+                                Portfolio
+                            </HashLink>
+                        </li>
+                        <li>
+                            <HashLink
+                                smooth
+                                to="#contact"
+                                className="list-items" >
+                                Contact
+                            </HashLink>
+                        </li>
                     </ul>
                 </div>
                 <div className="projects-column">
                     <h4 className="footer-header">Projects</h4>
-                    <ul className="list-unstyled">
-                        <a href="https://github.com/munauwar/MoviesIMDB"><li className='projects'>Movies IMDB</li></a>
-                    </ul>
+                    <li className="list-items">
+                        <a href="https://github.com/munauwar/MoviesIMDB">Movies IMDB</a>
+                    </li>
+                    <li className="list-items">
+                        <a href="https://github.com/munauwar/mughalprintstore">Mughal Print Store</a>
+
+                    </li>
+                    <li className="list-items">
+                        <a href="https://github.com/munauwar/crypto-tracker">Crypto tracker</a>
+                    </li>
                 </div>
             </div>
             <hr />

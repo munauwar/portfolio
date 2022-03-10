@@ -21,17 +21,26 @@
     color: #08fdd8;
 }
 
-.projects {
+.list-items {
     text-decoration: none;
-    color: white;
-    line-height: 2; 
-    cursor: pointer;
+    line-height: 2;
+    position: relative;
 }
 
-.projects:hover {
-    border-bottom: 2px solid red;
-    transition: all 0.2s ease-out;
-    cursor: pointer;
+.list-items:after {    
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: red;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.list-items:hover:after { 
+    width: 100%; 
+    left: 0; 
 }
 
 .footer-name {
@@ -43,19 +52,6 @@
 
 .footer-name::selection {
     color: #08fdd8;
-}
-
-.nav {
-    text-decoration: none;
-    color: white;
-    line-height: 2;
-    cursor: pointer;
-}
-
-.nav:hover {
-    border-bottom: 2px solid red;
-    transition: all 0.2s ease-out;
-    cursor: pointer;
 }
 
 .footer-content {
